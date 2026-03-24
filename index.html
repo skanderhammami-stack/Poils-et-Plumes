@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poils & Plumes — Clinique Vétérinaire à Ariana, Tunisie</title>
+    <meta name="description" content="Clinique vétérinaire Poils & Plumes à Ariana. Soins, toilettage, chirurgie, vaccination pour chiens, chats, oiseaux et NAC. Prenez rendez-vous en ligne.">
+    <meta name="keywords" content="vétérinaire ariana, clinique vétérinaire tunisie, toilettage chien, soins animaux, NAC tunisie, poils et plumes">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Poils & Plumes — Clinique Vétérinaire Ariana">
+    <meta property="og:description" content="Votre clinique vétérinaire chaleureuse à Ariana. Soins, toilettage, chirurgie pour chiens, chats, oiseaux et NAC.">
+    <meta property="og:image" content="Logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_TN">
+
+    <!-- Favicon (paw-themed from brand colors) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VeterinaryCare",
+        "name": "Poils & Plumes — Clinique Vétérinaire",
+        "image": "Logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3 rue Sod Maareb",
+            "addressLocality": "Ariana",
+            "postalCode": "2037",
+            "addressCountry": "TN"
+        },
+        "url": "https://www.facebook.com/clivetpoilsetplumes",
+        "email": "clivet.poilsetplumes@gmail.com",
+        "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            color: #4E3920;
+            background: #FCFBF7;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* ===== VARIABLES ===== */
+        :root {
+            --orange: #E7B473;
+            --orange-light: #f5dbb8;
+            --orange-dark: #d9a35e;
+            --turquoise: #7FC5CC;
+            --turquoise-light: #d4eef1;
+            --turquoise-dark: #5ba8b0;
+            --brown: #4E3920;
+            --brown-light: #7a6248;
+            --cream: #FCFBF7;
+            --cream-dark: #f5f0e6;
+            --gold: #AA7B3F;
+            --white: #ffffff;
+            --shadow: 0 4px 24px rgba(78, 57, 32, 0.08);
+            --shadow-lg: 0 8px 40px rgba(78, 57, 32, 0.12);
+            --shadow-xl: 0 20px 60px rgba(78, 57, 32, 0.15);
+            --radius: 20px;
+            --radius-sm: 12px;
+            --radius-xs: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul { list-style: none; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            font-size: 1.05rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(rgba(255,255,255,0.15), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .btn:hover::after { opacity: 1; }
+        .btn-primary {
+            background: var(--turquoise);
+            color: var(--white);
+            box-shadow: 0 4px 16px rgba(127, 197, 204, 0.4);
+        }
+        .btn-primary:hover {
+            background: var(--turquoise-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(127, 197, 204, 0.5);
+        }
+        .btn-secondary {
+            background: var(--orange);
+            color: var(--white);
+            box-shadow: 0 4px 16px rgba(231, 180, 115, 0.4);
+        }
+        .btn-secondary:hover {
+            background: var(--orange-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(231, 180, 115, 0.5);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--turquoise-dark);
+            border: 2.5px solid var(--turquoise);
+            padding: 13.5px 36px;
+        }
+        .btn-outline:hover {
+            background: var(--turquoise);
+            color: var(--white);
+        }
+        .btn-whatsapp {
+            background: #25D366;
+            color: var(--white);
+            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+        }
+        .btn-whatsapp:hover {
+            background: #1fb855;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45);
+        }
+
+        /* Pulse animation for main CTA */
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(127, 197, 204, 0.5); }
+            70% { box-shadow: 0 0 0 12px rgba(127, 197, 204, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(127, 197, 204, 0); }
+        }
+        .btn-pulse { animation: pulse-ring 2.5s ease-out infinite; }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--turquoise-dark);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+        .section-label .dot {
+            width: 8px; height: 8px;
+            background: var(--orange);
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            color: var(--brown);
+            margin-bottom: 16px;
+        }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--brown-light);
+            max-width: 620px;
+            margin: 0 auto 48px;
+        }
+
+        /* ===== WAVE DIVIDERS ===== */
+        .wave-divider {
+            width: 100%;
+            line-height: 0;
+            overflow: hidden;
+        }
+        .wave-divider svg { display: block; width: 100%; height: auto; }
+        .wave-divider.flip { transform: scaleY(-1); }
+
+        /* ===== DECORATIVE ELEMENTS ===== */
+        .deco-paw {
+            position: absolute;
+            opacity: 0.04;
+            font-size: 4rem;
+            color: var(--brown);
+            pointer-events: none;
+            user-select: none;
+        }
+        .deco-paw.large { font-size: 7rem; }
+        .deco-paw.turq { color: var(--turquoise); opacity: 0.06; }
+        .deco-paw.orange { color: var(--orange); opacity: 0.06; }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            background: rgba(252, 251, 247, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(231, 180, 115, 0.12);
+            transition: var(--transition);
+        }
+        .navbar.scrolled {
+            box-shadow: 0 2px 24px rgba(78, 57, 32, 0.1);
+            background: rgba(252, 251, 247, 0.97);
+        }
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 75px;
+        }
+        .nav-logo { display: flex; align-items: center; gap: 10px; }
+        .nav-logo img { height: 50px; width: auto; border-radius: 8px; }
+        .nav-links { display: flex; align-items: center; gap: 32px; }
+        .nav-links a {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--brown);
+            transition: var(--transition);
+            position: relative;
+            padding: 4px 0;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; left: 50%; transform: translateX(-50%);
+            width: 0; height: 3px;
+            background: var(--turquoise);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+        .nav-links a:hover::after,
+        .nav-links a.active::after { width: 100%; }
+        .nav-links a:hover,
+        .nav-links a.active { color: var(--turquoise-dark); }
+        .nav-cta .btn { padding: 10px 24px; font-size: 0.9rem; }
+
+        /* Hamburger with X animation */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 1001;
+            background: none;
+            border: none;
+        }
+        .hamburger span {
+            width: 26px; height: 3px;
+            background: var(--brown);
+            border-radius: 3px;
+            transition: var(--transition);
+            transform-origin: center;
+        }
+        .hamburger.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+        .hamburger.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+        /* ===== HERO ===== */
+        .hero {
+            padding: 120px 0 40px;
+            background: linear-gradient(170deg, var(--cream) 0%, #e6f4f6 40%, var(--turquoise-light) 70%, #e8f0e6 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        /* Decorative blobs */
+        .hero-blob {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-blob-1 {
+            top: -80px; right: -60px;
+            width: 420px; height: 420px;
+            background: radial-gradient(circle, rgba(231, 180, 115, 0.18) 0%, transparent 70%);
+        }
+        .hero-blob-2 {
+            bottom: -50px; left: -80px;
+            width: 350px; height: 350px;
+            background: radial-gradient(circle, rgba(127, 197, 204, 0.15) 0%, transparent 70%);
+        }
+        .hero-blob-3 {
+            top: 30%; left: 45%;
+            width: 200px; height: 200px;
+            background: radial-gradient(circle, rgba(170, 123, 63, 0.08) 0%, transparent 70%);
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 50px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-content { max-width: 580px; }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--turquoise-dark);
+            margin-bottom: 22px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--turquoise-light);
+        }
+        .hero-badge i { color: var(--orange); }
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            color: var(--brown);
+            margin-bottom: 20px;
+            line-height: 1.18;
+        }
+        .hero h1 .highlight {
+            color: var(--turquoise-dark);
+            position: relative;
+        }
+        .hero h1 .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 2px; left: 0; right: 0;
+            height: 6px;
+            background: var(--orange-light);
+            border-radius: 3px;
+            z-index: -1;
+        }
+        .hero-desc {
+            font-size: 1.15rem;
+            color: var(--brown-light);
+            margin-bottom: 32px;
+            line-height: 1.8;
+        }
+        .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
+        .hero-secondary-links {
+            display: flex;
+            gap: 24px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+        .hero-secondary-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--brown-light);
+            transition: var(--transition);
+        }
+        .hero-secondary-links a:hover { color: var(--turquoise-dark); }
+        .hero-secondary-links a i { font-size: 0.95rem; }
+
+        .hero-stats {
+            display: flex;
+            gap: 36px;
+            margin-top: 36px;
+            padding-top: 28px;
+            border-top: 2px solid rgba(231, 180, 115, 0.2);
+        }
+        .hero-stat { text-align: center; }
+        .hero-stat .number {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 900;
+            font-size: 1.8rem;
+            color: var(--turquoise-dark);
+            line-height: 1.2;
+        }
+        .hero-stat .label {
+            font-size: 0.82rem;
+            color: var(--brown-light);
+            font-weight: 600;
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-img-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 440px;
+        }
+        .hero-img-main {
+            width: 100%;
+            border-radius: 30px 30px 30px 4px;
+            box-shadow: var(--shadow-xl);
+            border: 5px solid var(--white);
+            position: relative;
+            z-index: 2;
+        }
+        /* Decorative shape behind hero image */
+        .hero-img-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -14px; right: -14px;
+            width: 100%; height: 100%;
+            border-radius: 30px 30px 30px 4px;
+            background: linear-gradient(135deg, var(--orange-light), var(--turquoise-light));
+            z-index: 1;
+        }
+        .hero-img-badge {
+            position: absolute;
+            z-index: 3;
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 12px 18px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 0.82rem;
+            color: var(--brown);
+        }
+        .hero-img-badge.top {
+            top: 12%; right: -24px;
+            animation: badgeFloat 4s ease-in-out infinite;
+        }
+        .hero-img-badge.bottom {
+            bottom: 16%; left: -24px;
+            animation: badgeFloat 4s ease-in-out infinite 2s;
+        }
+        .hero-img-badge .badge-icon {
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        .badge-icon.turq { background: var(--turquoise-light); color: var(--turquoise-dark); }
+        .badge-icon.ora { background: var(--orange-light); color: var(--gold); }
+
+        @keyframes badgeFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* ===== TRUST BAR ===== */
+        .trust-bar {
+            padding: 24px 0;
+            background: var(--white);
+            border-bottom: 1px solid rgba(231, 180, 115, 0.1);
+            position: relative;
+            z-index: 3;
+        }
+        .trust-bar .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 0.92rem;
+            color: var(--brown);
+        }
+        .trust-item i {
+            width: 42px; height: 42px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .trust-item:hover i { transform: scale(1.1); }
+        .trust-item:nth-child(odd) i { background: var(--turquoise-light); color: var(--turquoise-dark); }
+        .trust-item:nth-child(even) i { background: var(--orange-light); color: var(--gold); }
+
+        /* ===== ABOUT ===== */
+        .about {
+            padding: 90px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .about .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .about-images {
+            position: relative;
+            display: grid;
+            grid-template-columns: 5fr 4fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 14px;
+        }
+        .about-images img {
+            border-radius: var(--radius);
+            object-fit: cover;
+            width: 100%;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .about-images img:hover { transform: scale(1.02); }
+        .about-images img:nth-child(1) {
+            grid-row: span 2;
+            height: 100%;
+            border-radius: var(--radius) 8px 8px var(--radius);
+        }
+        .about-images img:nth-child(2) { height: 200px; border-radius: 8px var(--radius) 8px 8px; }
+        .about-images img:nth-child(3) { height: 200px; border-radius: 8px 8px var(--radius) 8px; }
+        /* Experience badge over images */
+        .about-exp-badge {
+            position: absolute;
+            bottom: -16px; left: 50%;
+            transform: translateX(-50%);
+            background: var(--turquoise);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            font-size: 0.9rem;
+            box-shadow: var(--shadow-lg);
+            white-space: nowrap;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .about-content .section-label { text-align: left; }
+        .about-content .section-title { text-align: left; }
+        .about-content p {
+            color: var(--brown-light);
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+        }
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 24px 0 32px;
+        }
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 0.93rem;
+            padding: 8px 12px;
+            background: var(--cream-dark);
+            border-radius: var(--radius-xs);
+            transition: var(--transition);
+        }
+        .about-feature:hover { background: var(--turquoise-light); }
+        .about-feature i { color: var(--turquoise); font-size: 1.05rem; }
+
+        /* ===== SERVICES ===== */
+        .services {
+            padding: 90px 0;
+            background: var(--cream-dark);
+            position: relative;
+            overflow: hidden;
+        }
+        .services-header { text-align: center; margin-bottom: 50px; }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 34px 26px;
+            text-align: center;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            border-radius: var(--radius) var(--radius) 0 0;
+            transition: var(--transition);
+        }
+        .service-card:nth-child(odd)::before { background: var(--turquoise); }
+        .service-card:nth-child(even)::before { background: var(--orange); }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+        .service-card:hover::before { height: 5px; }
+        .service-icon {
+            width: 68px; height: 68px;
+            border-radius: 22px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 18px;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+        .service-card:hover .service-icon { transform: scale(1.1) rotate(-5deg); }
+        .service-card:nth-child(odd) .service-icon { background: var(--turquoise-light); color: var(--turquoise-dark); }
+        .service-card:nth-child(even) .service-icon { background: var(--orange-light); color: var(--gold); }
+        .service-card h3 { font-size: 1.15rem; margin-bottom: 10px; }
+        .service-card p { font-size: 0.92rem; color: var(--brown-light); line-height: 1.7; }
+
+        /* ===== CTA BANNER ===== */
+        .cta-banner {
+            padding: 70px 0;
+            background: linear-gradient(135deg, var(--turquoise) 0%, #5db8c2 50%, var(--turquoise-dark) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-banner-deco {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            pointer-events: none;
+        }
+        .cta-banner-deco:nth-child(1) { top: -40%; right: -10%; width: 500px; height: 500px; }
+        .cta-banner-deco:nth-child(2) { bottom: -30%; left: -5%; width: 350px; height: 350px; background: rgba(255,255,255,0.04); }
+        .cta-banner .container { position: relative; z-index: 1; }
+        .cta-banner h2 { color: var(--white); font-size: clamp(1.5rem, 3.5vw, 2.3rem); margin-bottom: 14px; }
+        .cta-banner p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.05rem;
+            margin-bottom: 28px;
+            max-width: 520px;
+            margin-left: auto; margin-right: auto;
+        }
+        .cta-banner .btn-secondary { font-size: 1.08rem; padding: 16px 40px; }
+
+        /* ===== GALLERY ===== */
+        .gallery { padding: 90px 0; position: relative; overflow: hidden; }
+        .gallery-header { text-align: center; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 220px;
+            gap: 14px;
+        }
+        .gallery-item {
+            border-radius: var(--radius);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-item .gallery-caption {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            padding: 30px 16px 14px;
+            background: linear-gradient(to top, rgba(78, 57, 32, 0.7) 0%, transparent 100%);
+            color: var(--white);
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 0.82rem;
+            opacity: 0;
+            transform: translateY(8px);
+            transition: var(--transition);
+        }
+        .gallery-item:hover .gallery-caption { opacity: 1; transform: translateY(0); }
+        .gallery-item.span-2 { grid-column: span 2; }
+        .gallery-item.tall { grid-row: span 2; }
+
+        /* ===== BEFORE/AFTER ===== */
+        .before-after { padding: 90px 0; background: var(--cream-dark); position: relative; overflow: hidden; }
+        .before-after-header { text-align: center; }
+        .ba-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+        }
+        .ba-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .ba-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); }
+        .ba-card img { width: 100%; height: 280px; object-fit: cover; object-position: top; }
+        .ba-card-content { padding: 22px 24px; text-align: center; }
+        .ba-card-content h3 { font-size: 1.12rem; margin-bottom: 6px; }
+        .ba-card-content p { color: var(--brown-light); font-size: 0.93rem; }
+        .ba-tag {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 50px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .ba-tag.grooming { background: var(--orange-light); color: var(--gold); }
+        .ba-tag.care { background: var(--turquoise-light); color: var(--turquoise-dark); }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials { padding: 90px 0; position: relative; overflow: hidden; }
+        .testimonials-header { text-align: center; }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 30px 28px;
+            box-shadow: var(--shadow);
+            position: relative;
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+        }
+        .testimonial-card:nth-child(1) { border-bottom-color: var(--turquoise); }
+        .testimonial-card:nth-child(2) { border-bottom-color: var(--orange); }
+        .testimonial-card:nth-child(3) { border-bottom-color: var(--gold); }
+        .testimonial-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+        .testimonial-quote {
+            font-family: 'Nunito', sans-serif;
+            font-size: 3rem;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+        .testimonial-card:nth-child(1) .testimonial-quote { color: var(--turquoise-light); }
+        .testimonial-card:nth-child(2) .testimonial-quote { color: var(--orange-light); }
+        .testimonial-card:nth-child(3) .testimonial-quote { color: #e2d1b8; }
+        .testimonial-stars {
+            margin-bottom: 14px;
+            color: var(--orange);
+            font-size: 0.85rem;
+            display: flex;
+            gap: 2px;
+        }
+        .testimonial-text {
+            font-size: 0.97rem;
+            color: var(--brown-light);
+            margin-bottom: 18px;
+            line-height: 1.8;
+        }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar {
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            font-size: 1.05rem;
+            color: var(--white);
+        }
+        .testimonial-card:nth-child(1) .testimonial-avatar { background: var(--turquoise); }
+        .testimonial-card:nth-child(2) .testimonial-avatar { background: var(--orange); }
+        .testimonial-card:nth-child(3) .testimonial-avatar { background: var(--gold); }
+        .testimonial-name { font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 0.95rem; }
+        .testimonial-pet { font-size: 0.82rem; color: var(--brown-light); }
+
+        /* ===== HOURS ===== */
+        .hours {
+            padding: 70px 0;
+            background: var(--white);
+            position: relative;
+        }
+        .hours .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .hours-content { text-align: left; }
+        .hours-table {
+            background: var(--cream);
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: var(--shadow);
+        }
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(231, 180, 115, 0.15);
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .hours-row:last-child { border-bottom: none; }
+        .hours-row .day { color: var(--brown); font-weight: 700; }
+        .hours-row .time { color: var(--turquoise-dark); font-weight: 800; }
+        .hours-row.highlight {
+            background: var(--turquoise-light);
+            margin: 0 -16px;
+            padding: 12px 16px;
+            border-radius: var(--radius-xs);
+            border-bottom: none;
+        }
+        .hours-note {
+            margin-top: 16px;
+            padding: 12px 16px;
+            background: var(--orange-light);
+            border-radius: var(--radius-xs);
+            font-size: 0.88rem;
+            color: var(--gold);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* ===== FAQ ===== */
+        .faq { padding: 90px 0; background: var(--cream-dark); position: relative; overflow: hidden; }
+        .faq-header { text-align: center; }
+        .faq-grid { max-width: 780px; margin: 0 auto; }
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            margin-bottom: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(78, 57, 32, 0.04);
+            transition: var(--transition);
+        }
+        .faq-item:hover { box-shadow: var(--shadow); }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 26px;
+            cursor: pointer;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 1.02rem;
+            color: var(--brown);
+            transition: var(--transition);
+            gap: 16px;
+        }
+        .faq-question:hover { color: var(--turquoise-dark); }
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--turquoise);
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+        .faq-item.active .faq-question { color: var(--turquoise-dark); }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        .faq-item.active .faq-answer { max-height: 300px; }
+        .faq-answer-inner { padding: 0 26px 20px; }
+        .faq-answer p { color: var(--brown-light); font-size: 0.95rem; line-height: 1.8; }
+
+        /* ===== CONTACT ===== */
+        .contact { padding: 90px 0; position: relative; }
+        .contact-header { text-align: center; }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 36px;
+            align-items: stretch;
+        }
+        .contact-info { display: flex; flex-direction: column; gap: 18px; }
+        .contact-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 22px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            flex: 1;
+        }
+        .contact-card:hover { transform: translateX(6px); box-shadow: var(--shadow-lg); }
+        .contact-card-icon {
+            width: 50px; height: 50px;
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.15rem;
+            flex-shrink: 0;
+        }
+        .contact-card:nth-child(1) .contact-card-icon { background: var(--turquoise-light); color: var(--turquoise-dark); }
+        .contact-card:nth-child(2) .contact-card-icon { background: var(--orange-light); color: var(--gold); }
+        .contact-card:nth-child(3) .contact-card-icon { background: #d4f5e0; color: #25D366; }
+        .contact-card:nth-child(4) .contact-card-icon { background: #dce8f8; color: #1877F2; }
+        .contact-card h4 { font-size: 1rem; margin-bottom: 2px; }
+        .contact-card p, .contact-card a { color: var(--brown-light); font-size: 0.92rem; }
+        .contact-card a:hover { color: var(--turquoise-dark); }
+        .contact-map {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            min-height: 380px;
+            border: 3px solid var(--white);
+        }
+        .contact-map iframe { width: 100%; height: 100%; min-height: 380px; border: none; }
+
+        /* ===== FINAL CTA ===== */
+        .final-cta {
+            padding: 80px 0;
+            background: var(--brown);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .final-cta-deco {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .final-cta-deco:nth-child(1) {
+            top: -60%; right: -10%;
+            width: 500px; height: 500px;
+            background: rgba(127,197,204,0.06);
+        }
+        .final-cta-deco:nth-child(2) {
+            bottom: -40%; left: -5%;
+            width: 350px; height: 350px;
+            background: rgba(231,180,115,0.05);
+        }
+        .final-cta .container { position: relative; z-index: 1; }
+        .final-cta h2 {
+            color: var(--cream);
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            margin-bottom: 14px;
+        }
+        .final-cta p {
+            color: rgba(252, 251, 247, 0.65);
+            font-size: 1.05rem;
+            margin-bottom: 28px;
+            max-width: 520px;
+            margin-left: auto; margin-right: auto;
+        }
+        .final-cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+        /* ===== FOOTER ===== */
+        .footer { background: #3b2a17; padding: 56px 0 0; }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 36px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(252, 251, 247, 0.08);
+        }
+        .footer-brand img { height: 56px; margin-bottom: 14px; border-radius: 8px; }
+        .footer-brand p { color: rgba(252, 251, 247, 0.55); font-size: 0.88rem; line-height: 1.7; margin-bottom: 18px; }
+        .footer-socials { display: flex; gap: 10px; }
+        .footer-socials a {
+            width: 38px; height: 38px;
+            border-radius: 50%;
+            background: rgba(252, 251, 247, 0.07);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--cream);
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+        .footer-socials a:hover { background: var(--turquoise); transform: translateY(-2px); }
+        .footer-col h4 { color: var(--cream); font-size: 1rem; margin-bottom: 18px; }
+        .footer-col ul li { margin-bottom: 8px; }
+        .footer-col ul li a {
+            color: rgba(252, 251, 247, 0.55);
+            font-size: 0.88rem;
+            transition: var(--transition);
+        }
+        .footer-col ul li a:hover { color: var(--turquoise); padding-left: 4px; }
+        .footer-bottom {
+            text-align: center;
+            padding: 22px 0;
+            color: rgba(252, 251, 247, 0.35);
+            font-size: 0.82rem;
+        }
+        .footer-bottom span { color: var(--orange); }
+
+        /* ===== SCROLL TO TOP ===== */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px; right: 30px;
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            background: var(--turquoise);
+            color: var(--white);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: var(--transition);
+            z-index: 997;
+            border: none;
+        }
+        .scroll-top.visible { opacity: 1; transform: translateY(0); }
+        .scroll-top:hover { background: var(--turquoise-dark); transform: translateY(-2px); }
+
+        /* ===== STICKY CTA MOBILE ===== */
+        .sticky-cta-mobile {
+            display: none;
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            padding: 10px 16px;
+            background: rgba(252, 251, 247, 0.97);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(231, 180, 115, 0.2);
+            z-index: 998;
+        }
+        .sticky-cta-mobile-inner {
+            display: flex;
+            gap: 8px;
+        }
+        .sticky-cta-mobile .btn {
+            flex: 1;
+            justify-content: center;
+            padding: 12px 16px;
+            font-size: 0.9rem;
+        }
+
+        /* ===== LIGHTBOX ===== */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.92);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .lightbox.active { opacity: 1; pointer-events: all; }
+        .lightbox img {
+            max-width: 90%; max-height: 88vh;
+            border-radius: var(--radius);
+            box-shadow: 0 0 80px rgba(0,0,0,0.6);
+            transform: scale(0.92);
+            transition: transform 0.3s ease;
+        }
+        .lightbox.active img { transform: scale(1); }
+        .lightbox-close {
+            position: absolute;
+            top: 20px; right: 28px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            width: 48px; height: 48px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            transition: var(--transition);
+        }
+        .lightbox-close:hover { background: rgba(255,255,255,0.2); }
+
+        /* ===== ANIMATIONS ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        /* Stagger children for cards */
+        .stagger-children .reveal:nth-child(2) { transition-delay: 0.1s; }
+        .stagger-children .reveal:nth-child(3) { transition-delay: 0.2s; }
+        .stagger-children .reveal:nth-child(4) { transition-delay: 0.25s; }
+        .stagger-children .reveal:nth-child(5) { transition-delay: 0.3s; }
+        .stagger-children .reveal:nth-child(6) { transition-delay: 0.35s; }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+            .reveal { opacity: 1; transform: none; }
+            html { scroll-behavior: auto; }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero-content { max-width: 100%; margin: 0 auto; }
+            .hero-buttons { justify-content: center; }
+            .hero-secondary-links { justify-content: center; }
+            .hero-stats { justify-content: center; }
+            .hero-visual { margin-top: 36px; }
+            .hero-img-badge { display: none; }
+            .hero-img-wrapper::before { top: -10px; right: -10px; }
+            .about .container { grid-template-columns: 1fr; }
+            .about-images { max-width: 560px; margin: 0 auto; }
+            .about-content { text-align: center; }
+            .about-content .section-label { justify-content: center; }
+            .about-features { max-width: 420px; margin: 24px auto 32px; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); grid-auto-rows: 200px; }
+            .ba-grid { grid-template-columns: 1fr 1fr; }
+            .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+            .testimonials-grid .testimonial-card:nth-child(3) { grid-column: span 2; max-width: 500px; margin: 0 auto; }
+            .hours .container { grid-template-columns: 1fr; }
+            .hours-content { text-align: center; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .nav-cta { display: none; }
+            .hamburger { display: flex; }
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 75px; left: 0; right: 0;
+                background: var(--cream);
+                padding: 28px 24px;
+                gap: 16px;
+                box-shadow: var(--shadow-lg);
+                z-index: 999;
+                border-bottom: 3px solid var(--turquoise-light);
+            }
+            .nav-links.active a { font-size: 1.05rem; padding: 8px 0; }
+            .hero { padding: 100px 0 30px; }
+            .hero h1 { font-size: 1.9rem; }
+            .hero-img-wrapper { max-width: 320px; }
+            .hero-stats { gap: 20px; }
+            .hero-stat .number { font-size: 1.5rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
+            .gallery-item.span-2 { grid-column: span 1; }
+            .gallery-item.tall { grid-row: span 1; }
+            .ba-grid { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .testimonials-grid .testimonial-card:nth-child(3) { grid-column: span 1; max-width: 100%; }
+            .trust-bar .container { gap: 20px; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-socials { justify-content: center; }
+            .about-exp-badge { font-size: 0.8rem; padding: 10px 20px; }
+            .sticky-cta-mobile { display: block; }
+            body { padding-bottom: 68px; }
+            .scroll-top { bottom: 78px; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .hero-buttons .btn { width: 100%; justify-content: center; }
+            .hero-secondary-links { flex-direction: column; align-items: center; gap: 10px; }
+            .hero-stats { flex-direction: column; gap: 14px; }
+            .about-features { grid-template-columns: 1fr; }
+            .trust-bar .container { flex-direction: column; gap: 14px; align-items: center; }
+            .final-cta-buttons { flex-direction: column; align-items: center; }
+            .final-cta-buttons .btn { width: 80%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">
+                <img src="Logo.png" alt="Poils & Plumes — Clinique Vétérinaire">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-nav>Notre clinique</a></li>
+                <li><a href="#services" data-nav>Services</a></li>
+                <li><a href="#gallery" data-nav>Galerie</a></li>
+                <li><a href="#testimonials" data-nav>Avis</a></li>
+                <li><a href="#faq" data-nav>FAQ</a></li>
+                <li><a href="#contact" data-nav>Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#rdv" class="btn btn-primary" onclick="openCalendly(); return false;">
+                    <i class="fas fa-calendar-check"></i> Prendre RDV
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="hero-blob hero-blob-3"></div>
+        <span class="deco-paw large" style="top:10%;left:3%;transform:rotate(-20deg);">🐾</span>
+        <span class="deco-paw" style="bottom:15%;right:5%;transform:rotate(25deg);">🐾</span>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-heart"></i>
+                    Clinique vétérinaire à Ennasr, Ariana
+                </div>
+                <h1>Chiens, chats, oiseaux&nbsp;:<br>ici, chaque <span class="highlight">compagnon</span> est&nbsp;en famille.</h1>
+                <p class="hero-desc">Chez <strong>Poils&nbsp;&&nbsp;Plumes</strong>, on accueille vos animaux avec douceur et on les soigne avec expertise. Consultation, toilettage, chirurgie, NAC — tout est réuni sous un même toit.</p>
+                <div class="hero-buttons">
+                    <a href="#rdv" class="btn btn-primary btn-pulse" onclick="openCalendly(); return false;">
+                        <i class="fas fa-calendar-check"></i> Réserver ma consultation
+                    </a>
+                    <a href="#services" class="btn btn-outline">
+                        <i class="fas fa-paw"></i> Découvrir nos soins
+                    </a>
+                </div>
+                <div class="hero-secondary-links">
+                    <a href="mailto:clivet.poilsetplumes@gmail.com"><i class="fas fa-envelope"></i> Nous écrire</a>
+                    <a href="https://www.facebook.com/clivetpoilsetplumes" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="number" data-count="2000">0</div>
+                        <div class="label">Animaux soignés</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">5/5</div>
+                        <div class="label">Note Google</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">7j/7</div>
+                        <div class="label">Disponibilité</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-img-wrapper">
+                    <img src="Photos/10.png" alt="Toilettage avant/après — Poils & Plumes" class="hero-img-main" loading="eager">
+                    <div class="hero-img-badge top">
+                        <div class="badge-icon turq"><i class="fas fa-shield-heart"></i></div>
+                        <span>Soins doux & attentifs</span>
+                    </div>
+                    <div class="hero-img-badge bottom">
+                        <div class="badge-icon ora"><i class="fas fa-star"></i></div>
+                        <span>+200 familles nous font confiance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="wave-divider" style="background:var(--white);margin-top:-1px;">
+        <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 720,0 1440,40 L1440,0 L0,0 Z" fill="#e6f4f6"/>
+        </svg>
+    </div>
+
+    <!-- ===== TRUST BAR ===== -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-item"><i class="fas fa-user-doctor"></i><span>Vétérinaires diplômés</span></div>
+            <div class="trust-item"><i class="fas fa-heart-pulse"></i><span>Équipements modernes</span></div>
+            <div class="trust-item"><i class="fas fa-dove"></i><span>Tous animaux acceptés</span></div>
+            <div class="trust-item"><i class="fas fa-clock"></i><span>RDV rapides en ligne</span></div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <span class="deco-paw turq large" style="top:8%;right:4%;transform:rotate(15deg);">🐾</span>
+        <div class="container">
+            <div class="about-images reveal">
+                <img src="Photos/2.png" alt="Fennec soigné chez Poils & Plumes — soins NAC" loading="lazy">
+                <img src="Photos/1.png" alt="Cabine de séchage — toilettage professionnel" loading="lazy">
+                <img src="Photos/8.png" alt="Compagnon en convalescence à la clinique" loading="lazy">
+                <div class="about-exp-badge">
+                    <i class="fas fa-award"></i> Clinique équipée & moderne
+                </div>
+            </div>
+            <div class="about-content reveal">
+                <div class="section-label"><span class="dot"></span> Qui sommes-nous</div>
+                <h2 class="section-title">Bien plus qu'une clinique :<br>une seconde maison pour vos compagnons</h2>
+                <p>Chez <strong>Poils&nbsp;&&nbsp;Plumes</strong>, chaque animal est unique. Notre équipe passionnée prend le temps de comprendre les besoins de vos compagnons et de vous rassurer à chaque étape.</p>
+                <p>Du simple contrôle au toilettage en passant par la chirurgie, nous mettons notre savoir-faire au service de leur bien-être — avec patience, douceur et professionnalisme.</p>
+                <div class="about-features">
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> Soins personnalisés</div>
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> Équipe passionnée</div>
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> Diagnostic avancé</div>
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> Accueil chaleureux</div>
+                </div>
+                <a href="#rdv" class="btn btn-primary" onclick="openCalendly(); return false;">
+                    <i class="fas fa-calendar-check"></i> Réservez votre visite
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="wave-divider" style="background:var(--cream-dark);margin-top:-1px;">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,30 C480,60 960,0 1440,30 L1440,0 L0,0 Z" fill="#FCFBF7"/>
+        </svg>
+    </div>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <span class="deco-paw orange" style="bottom:10%;left:3%;transform:rotate(-10deg);">🐾</span>
+        <span class="deco-paw turq" style="top:5%;right:8%;transform:rotate(30deg);">🪶</span>
+        <div class="container">
+            <div class="services-header reveal">
+                <div class="section-label"><span class="dot"></span> Nos services</div>
+                <h2 class="section-title">Tout ce dont votre compagnon a besoin</h2>
+                <p class="section-subtitle">Des soins complets, adaptés à chaque espèce, dispensés avec toute la douceur qu'ils méritent.</p>
+            </div>
+            <div class="services-grid stagger-children">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+                    <h3>Consultation</h3>
+                    <p>Bilan de santé complet dans un cadre calme et bienveillant. Prévention, diagnostic et conseils adaptés à votre animal.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-syringe"></i></div>
+                    <h3>Vaccination</h3>
+                    <p>Calendrier vaccinal adapté. Nous prenons le temps de tout expliquer pour que vous repartiez l'esprit tranquille.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-scissors"></i></div>
+                    <h3>Toilettage</h3>
+                    <p>Bain, coupe, séchage en cabine professionnelle. Votre compagnon repart beau, propre et détendu.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-x-ray"></i></div>
+                    <h3>Imagerie & Radio</h3>
+                    <p>Diagnostic précis grâce à nos équipements d'imagerie modernes. Résultats rapides pour agir au plus vite.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-hospital"></i></div>
+                    <h3>Chirurgie</h3>
+                    <p>Interventions réalisées avec le plus grand soin, dans un bloc opératoire équipé et stérile.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-dove"></i></div>
+                    <h3>Oiseaux & NAC</h3>
+                    <p>Oiseaux, rongeurs, fennecs, reptiles — chaque espèce reçoit une attention adaptée et experte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner reveal">
+        <div class="cta-banner-deco"></div>
+        <div class="cta-banner-deco"></div>
+        <div class="container">
+            <h2>Votre compagnon mérite les meilleurs soins</h2>
+            <p>Ne remettez pas sa santé à plus tard. Réservez en quelques clics et offrez-lui l'attention qu'il mérite.</p>
+            <a href="#rdv" class="btn btn-secondary" onclick="openCalendly(); return false;">
+                <i class="fas fa-calendar-check"></i> Choisir mon créneau
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery" id="gallery">
+        <span class="deco-paw large orange" style="top:5%;left:2%;transform:rotate(-15deg);">🐾</span>
+        <div class="container">
+            <div class="gallery-header reveal">
+                <div class="section-label"><span class="dot"></span> Notre univers</div>
+                <h2 class="section-title">La vie chez Poils & Plumes</h2>
+                <p class="section-subtitle">Notre clinique, nos patients, et tous ces moments de complicité qui font notre quotidien.</p>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item tall" onclick="openLightbox(this)">
+                    <img src="Photos/2.png" alt="Fennec examiné" loading="lazy">
+                    <div class="gallery-caption">Soins NAC — Fennec</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="Photos/1.png" alt="Cabine de séchage" loading="lazy">
+                    <div class="gallery-caption">Cabine de séchage</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="Photos/7.png" alt="Radiographie numérique" loading="lazy">
+                    <div class="gallery-caption">Imagerie avancée</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="Photos/6.png" alt="Perroquet soigné" loading="lazy">
+                    <div class="gallery-caption">Soins oiseaux</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="Photos/5.png" alt="Cabine de soins" loading="lazy">
+                    <div class="gallery-caption">Spa & bien-être</div>
+                </div>
+                <div class="gallery-item span-2" onclick="openLightbox(this)">
+                    <img src="Photos/9.png" alt="Facade clinique" loading="lazy">
+                    <div class="gallery-caption">Notre clinique — Ariana</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="Photos/8.png" alt="Convalescence" loading="lazy">
+                    <div class="gallery-caption">Repos & convalescence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="wave-divider" style="background:var(--cream-dark);margin-top:-1px;">
+        <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,25 C360,50 1080,0 1440,25 L1440,0 L0,0 Z" fill="#FCFBF7"/>
+        </svg>
+    </div>
+
+    <!-- ===== BEFORE / AFTER ===== -->
+    <section class="before-after" id="results">
+        <div class="container">
+            <div class="before-after-header reveal">
+                <div class="section-label"><span class="dot"></span> Résultats</div>
+                <h2 class="section-title">Avant / Après : la preuve en images</h2>
+                <p class="section-subtitle">Chaque transformation raconte une histoire de soin, de patience et d'amour.</p>
+            </div>
+            <div class="ba-grid">
+                <div class="ba-card reveal">
+                    <img src="Photos/10.png" alt="Toilettage Yorkshire avant après" loading="lazy">
+                    <div class="ba-card-content">
+                        <span class="ba-tag grooming">Toilettage</span>
+                        <h3>Transformation complète</h3>
+                        <p>Un petit Yorkshire emmêlé reparti frais, propre et magnifique. Le sourire du propriétaire en dit long.</p>
+                    </div>
+                </div>
+                <div class="ba-card reveal">
+                    <img src="Photos/11.png" alt="Soins chouette avant après" loading="lazy">
+                    <div class="ba-card-content">
+                        <span class="ba-tag care">Soins</span>
+                        <h3>Chouette rétablie avec succès</h3>
+                        <p>Arrivée affaiblie, cette petite chouette a retrouvé toute sa vitalité grâce à notre équipe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials">
+        <span class="deco-paw turq" style="top:10%;right:3%;transform:rotate(20deg);">🐾</span>
+        <div class="container">
+            <div class="testimonials-header reveal">
+                <div class="section-label"><span class="dot"></span> Témoignages</div>
+                <h2 class="section-title">Ils nous font confiance</h2>
+                <p class="section-subtitle">Plus de 200 familles nous recommandent. Voici ce qu'elles disent.</p>
+            </div>
+            <div class="testimonials-grid stagger-children">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-quote">&ldquo;</div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Mon chat Luna avait très peur des vétos. Ici, l'équipe a été tellement douce et patiente qu'elle s'est laissée examiner sans stress. On y retournera les yeux fermés !</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <div class="testimonial-name">Sarah M.</div>
+                            <div class="testimonial-pet">Maman de Luna (chat)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-quote">&ldquo;</div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Rex a été opéré après une fracture. Explication claire avant l'intervention, suivi impeccable, et surtout beaucoup de bienveillance. Merci infiniment à toute l'équipe !</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">K</div>
+                        <div>
+                            <div class="testimonial-name">Karim B.</div>
+                            <div class="testimonial-pet">Papa de Rex (chien)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-quote">&ldquo;</div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Mon perroquet Kiwi ne mangeait plus. Le docteur a pris le temps de tout m'expliquer et Kiwi va beaucoup mieux. C'est rare de trouver un véto qui soigne aussi bien les oiseaux !</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <div class="testimonial-name">Amira T.</div>
+                            <div class="testimonial-pet">Maman de Kiwi (perroquet)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="wave-divider" style="background:var(--white);margin-top:-1px;">
+        <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,25 C480,0 960,50 1440,25 L1440,0 L0,0 Z" fill="#FCFBF7"/>
+        </svg>
+    </div>
+
+    <!-- ===== OPENING HOURS ===== -->
+    <section class="hours" id="hours">
+        <div class="container">
+            <div class="hours-content reveal">
+                <div class="section-label"><span class="dot"></span> Horaires</div>
+                <h2 class="section-title">Quand venir nous voir ?</h2>
+                <p class="section-subtitle" style="margin:0 0 24px; text-align:left;">Nous sommes disponibles pour vous accueillir toute la semaine. Pensez à réserver votre créneau pour éviter l'attente.</p>
+                <a href="#rdv" class="btn btn-primary" onclick="openCalendly(); return false;">
+                    <i class="fas fa-calendar-check"></i> Voir les créneaux disponibles
+                </a>
+            </div>
+            <div class="hours-table reveal">
+                <div class="hours-row"><span class="day">Lundi</span><span class="time">09:00 — 19:00</span></div>
+                <div class="hours-row"><span class="day">Mardi</span><span class="time">09:00 — 19:00</span></div>
+                <div class="hours-row"><span class="day">Mercredi</span><span class="time">09:00 — 19:00</span></div>
+                <div class="hours-row"><span class="day">Jeudi</span><span class="time">09:00 — 19:00</span></div>
+                <div class="hours-row"><span class="day">Vendredi</span><span class="time">09:00 — 19:00</span></div>
+                <div class="hours-row highlight"><span class="day">Samedi</span><span class="time">09:00 — 14:00</span></div>
+                <div class="hours-row"><span class="day">Dimanche</span><span class="time">Sur rendez-vous</span></div>
+                <div class="hours-note"><i class="fas fa-info-circle"></i> Urgences acceptées — contactez-nous directement</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq" id="faq">
+        <span class="deco-paw orange large" style="bottom:8%;right:4%;transform:rotate(10deg);">🐾</span>
+        <div class="container">
+            <div class="faq-header reveal">
+                <div class="section-label"><span class="dot"></span> FAQ</div>
+                <h2 class="section-title">Vos questions, nos réponses</h2>
+                <p class="section-subtitle">Tout ce qu'il faut savoir avant votre visite.</p>
+            </div>
+            <div class="faq-grid reveal">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Comment prendre rendez-vous ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        <p>Cliquez sur le bouton « Réserver ma consultation » sur cette page : vous accéderez à notre agenda en ligne pour choisir le créneau qui vous convient. Vous pouvez aussi nous contacter par email ou via Facebook.</p>
+                    </div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quels animaux acceptez-vous ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        <p>Chiens, chats, oiseaux (perroquets, canaris…), rongeurs (hamsters, lapins…), fennecs et autres NAC. Si vous avez un doute, contactez-nous avant votre visite !</p>
+                    </div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Proposez-vous du toilettage ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        <p>Oui ! Toilettage complet : bain, séchage en cabine professionnelle, coupe et mise en forme. Votre compagnon repart propre, beau et bien détendu.</p>
+                    </div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>La clinique est-elle équipée pour la chirurgie ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        <p>Oui. Bloc opératoire moderne et stérile, équipements de radiographie numérique. Nous réalisons les interventions courantes et plus complexes avec le plus grand soin.</p>
+                    </div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Comment se passe une première visite ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        <p>On fait connaissance avec votre animal : son historique, ses habitudes, ses besoins. L'examen se fait en douceur, et on vous explique tout clairement. Aucune raison de stresser !</p>
+                    </div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Où se trouve exactement la clinique ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        <p>3 rue Sod Maareb, 2037 Ariana, Tunisie. Vous trouverez la carte interactive juste en dessous, dans la section Contact.</p>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-header reveal">
+                <div class="section-label"><span class="dot"></span> Contact</div>
+                <h2 class="section-title">Rendez-nous visite !</h2>
+                <p class="section-subtitle">Facile d'accès, notre équipe se fera un plaisir de vous accueillir.</p>
+            </div>
+            <div class="contact-grid reveal">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-location-dot"></i></div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>3 rue Sod Maareb, 2037 Ariana, Tunisie</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:clivet.poilsetplumes@gmail.com">clivet.poilsetplumes@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/216XXXXXXXX" target="_blank" rel="noopener">Envoyez-nous un message</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fab fa-facebook"></i></div>
+                        <div>
+                            <h4>Facebook</h4>
+                            <a href="https://www.facebook.com/clivetpoilsetplumes" target="_blank" rel="noopener">Suivez-nous sur Facebook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.5!2d10.1647!3d36.8625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDUxJzQ1LjAiTiAxMMKwMDknNTMuMCJF!5e0!3m2!1sfr!2stn!4v1"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localisation Poils & Plumes — Ariana">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="final-cta" id="rdv">
+        <div class="final-cta-deco"></div>
+        <div class="final-cta-deco"></div>
+        <div class="container reveal">
+            <h2>Prêt à offrir le meilleur à votre compagnon ?</h2>
+            <p>Prenez rendez-vous en ligne en quelques clics. Notre équipe vous attend avec le sourire.</p>
+            <div class="final-cta-buttons">
+                <a href="#" class="btn btn-primary btn-pulse" onclick="openCalendly(); return false;" style="font-size:1.1rem;padding:18px 44px;">
+                    <i class="fas fa-calendar-check"></i> Réserver ma consultation
+                </a>
+                <a href="mailto:clivet.poilsetplumes@gmail.com" class="btn btn-outline" style="border-color:rgba(252,251,247,0.3);color:var(--cream);">
+                    <i class="fas fa-envelope"></i> Nous écrire
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="Logo.png" alt="Poils & Plumes">
+                    <p>Clinique vétérinaire chaleureuse à Ariana. Nous prenons soin de vos compagnons à poils et à plumes avec amour et expertise.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/clivetpoilsetplumes" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:clivet.poilsetplumes@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/216XXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#about">Notre clinique</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Galerie</a></li>
+                        <li><a href="#testimonials">Avis</a></li>
+                        <li><a href="#hours">Horaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Consultation</a></li>
+                        <li><a href="#services">Vaccination</a></li>
+                        <li><a href="#services">Toilettage</a></li>
+                        <li><a href="#services">Chirurgie</a></li>
+                        <li><a href="#services">Oiseaux & NAC</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#contact">3 rue Sod Maareb, Ariana</a></li>
+                        <li><a href="mailto:clivet.poilsetplumes@gmail.com">Email</a></li>
+                        <li><a href="https://www.facebook.com/clivetpoilsetplumes" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://wa.me/216XXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 <span>Poils & Plumes</span> — Clinique Vétérinaire. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCROLL TO TOP ===== -->
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== STICKY CTA MOBILE ===== -->
+    <div class="sticky-cta-mobile">
+        <div class="sticky-cta-mobile-inner">
+            <a href="#rdv" class="btn btn-primary" onclick="openCalendly(); return false;">
+                <i class="fas fa-calendar-check"></i> Réserver
+            </a>
+            <a href="mailto:clivet.poilsetplumes@gmail.com" class="btn btn-secondary">
+                <i class="fas fa-envelope"></i> Écrire
+            </a>
+        </div>
+    </div>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" aria-label="Fermer">&times;</button>
+        <img src="" alt="Photo agrandie" id="lightboxImg">
+    </div>
+
+    <!-- ===== CALENDLY WIDGET ===== -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+    <script>
+        // ===== CALENDLY =====
+        function openCalendly() {
+            if (typeof Calendly !== 'undefined') {
+                Calendly.initPopupWidget({url: 'https://calendly.com/poilsetplumes'});
+            }
+            return false;
+        }
+
+        // ===== NAVBAR SCROLL + ACTIVE STATE =====
+        const navbar = document.getElementById('navbar');
+        const navLinks = document.querySelectorAll('[data-nav]');
+        const sections = document.querySelectorAll('section[id]');
+
+        function updateNav() {
+            const scrollY = window.scrollY;
+            navbar.classList.toggle('scrolled', scrollY > 50);
+
+            // Active section highlight
+            let current = '';
+            sections.forEach(section => {
+                const top = section.offsetTop - 120;
+                if (scrollY >= top) current = section.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+            });
+        }
+        window.addEventListener('scroll', updateNav, { passive: true });
+
+        // ===== HAMBURGER MENU =====
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            const hamburger = document.getElementById('hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+                document.getElementById('hamburger').classList.remove('active');
+            });
+        });
+
+        // ===== FAQ ACCORDION =====
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const wasActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            if (!wasActive) item.classList.add('active');
+        }
+
+        // ===== SCROLL TO TOP =====
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 500);
+        }, { passive: true });
+
+        // ===== LIGHTBOX WITH KEYBOARD =====
+        function openLightbox(el) {
+            const img = el.querySelector('img');
+            document.getElementById('lightboxImg').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // ===== SCROLL REVEAL (staggered) =====
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // ===== COUNTER ANIMATION =====
+        function animateCounter(el, target) {
+            const duration = 1800;
+            const start = performance.now();
+            function update(now) {
+                const progress = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = '+' + Math.floor(eased * target).toLocaleString('fr-FR');
+                if (progress < 1) requestAnimationFrame(update);
+            }
+            requestAnimationFrame(update);
+        }
+        const counterEl = document.querySelector('[data-count]');
+        if (counterEl) {
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target, parseInt(entry.target.dataset.count));
+                        counterObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            counterObserver.observe(counterEl);
+        }
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || href === '#rdv') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+
+</body>
+</html>

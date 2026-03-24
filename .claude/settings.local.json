@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(node -e \"console.log\\(process.env.PATH.split\\('';''\\).slice\\(0,5\\).join\\(''\\\\n''\\)\\)\")",
+      "Bash(node -e \"console.log\\(process.env.PATH\\)\")",
+      "Bash(tr ';' '\\\\n')"
+    ]
+  }
+}
